@@ -32,7 +32,10 @@ body{
 .titulo{
    padding: 50px;
 }
-
+.seccion-fami{
+   width: 100%;
+   background-color: #f0f0f0;
+}
 .informacion{
    text-align: center;
    font-size: 22px;
@@ -46,7 +49,12 @@ body{
    text-align: center;
 }
 
-.informacion img{
+.galery-family{
+   display: flex;
+   flex-wrap: wrap;
+justify-content: space-around;}
+
+.galery-family img{
    width: 300px;
    height: 300px;
    object-fit: cover;
@@ -57,7 +65,7 @@ body{
    transition: all 400ms ease;
 
 }
-.informacion img:hover {
+.galery-family img:hover {
    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
    transform: translateY(-3%);
    background-color: #b6cdda;}
@@ -71,17 +79,7 @@ body{
 
 }
 
-.descripcion img{
-   width: 400px;
-   height: 400px;
-   object-fit: cover;
-   border-radius: 40%;
-}
 
-.descripcion p{
-   font-size: 22px;
-   color:  #7a6e6e; ;
-}
 
  .descrption{
    text-align: center;
@@ -90,14 +88,20 @@ body{
    font-size: 40px;
  }
 
+ .conteiner-card{
+   width: 100%;
+   background-color: #f0f0f0;
+ }
+
+ 
 .contenido1 {
    width: 100%;
    display: flex;
+   flex-wrap: wrap;
    padding-top: 100px;
    justify-content: center;
    text-align: center;
-    background-color: #f0f0f0;
-    padding-top: 50PX;
+   padding-top: 50PX;
 
  }
  

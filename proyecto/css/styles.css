@@ -56,14 +56,16 @@
    max-width: 1100px;
    margin: auto;
    display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
 
-
-
+.main-container .contenido{
+   width: 30%;
 }
 
 .contenido img{
-   width: 350px;
-   height: 350px;
+   width: 100%;
    border-radius: 50%;
    margin-top: 50px;
    object-fit: cover;
@@ -85,11 +87,11 @@
 .texto{
    
    font-family: 'Roboto', sans-serif;
-   width: 80%;
+   width: 65%;
    line-height: 1.4;
    text-align: left;
    padding-top: 20px;
-   padding-left: 15px;
+   padding-left: 15px;7
 
 }
 
@@ -103,48 +105,63 @@
    padding-top: 30px;
 }
 
+.portafolio .img{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 1000px;
+   margin: auto;
+}
+
 .portafolio img{
    width: 300px;
    height: 300px;
    object-fit: cover;
-   padding: 60px;
-   border: solid;
-   margin-right: 60px;
-   margin-bottom: 30px;
-   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
    cursor: default;
    transition: all 400ms ease;
-   margin-right: 30px;
-   margin-bottom: 30px;
- 
-
+   padding: 20px;
 }
 
 .portafolio img:hover {
    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
    transform: translateY(-3%);
-   background-color: #b6cdda;}
+   background-color: #b6cdda;
+}
+
+
 
 
 
 /*aficiones*/
-
-.contexto{
-   text-align: center;
+.seccion{
+   width: 100%;
    background-color: #f0f0f0;
    padding-top: 20px;
-   margin-bottom: 50px;
 }
+.container-galery{
+   max-width: 1100px;
+   margin: auto;
+   text-align: center;
+   
+}
+ section .container-galery h1{
+   font-size: 25px;
+   color: black;
+   margin: 0;
+}
+.contexto{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: auto;
+}
+ 
 
 .contexto img{
    width: 300px;
    height: 300px;
    object-fit: cover;
-   margin-right: 50px;
    padding: 30px;
-   border: solid;
-   margin-bottom: 30px;
-   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
    cursor: default;
    transition: all 400ms ease;
    
@@ -154,16 +171,22 @@
    transform: translateY(-3%);
    background-color: #b6cdda;}
 
-.contexto video{
-   margin-right: 50px;
-   padding: 30px;
-   border: solid;
-   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+
+.video-galery{
+   max-width: 1100px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: auto;
+}
+
+.video-galery video{
+   padding: 20px;
    cursor: default;
    transition: all 400ms ease;
   
 }
-.contexto video:hover {
+.video-galery video:hover {
    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
    transform: translateY(-3%);
    background-color: #b6cdda;}
