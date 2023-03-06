@@ -17,14 +17,19 @@
 
 }
 .menu{
-   text-align: right;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 600px;
+   margin-left: auto;
 
 }
 .menu a {
    text-decoration: none;
    color:black ;
    font-family: 'Roboto', sans-serif;
-   margin-right: 10px;
+   margin-right: 20px;
+   margin-bottom: 20px;
    transition: 0.5s ease;
   
 }
@@ -34,11 +39,6 @@
    color:#599abf;
  
 }
-
-
-
-   
-   
 
 .titulo{
    padding: 50px;
@@ -72,7 +72,6 @@
    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
    cursor: default;
    transition: all 400ms ease;
-   margin-right: 30px;
    margin-bottom: 30px;
    
 
@@ -199,22 +198,30 @@
 
 /*galeria*/
 .fotos{
-   text-align: center;
+   width: 100%;
    background-color: #f0f0f0;
    padding-top: 20px;
 }
-.fotos img{
-   padding: 30px;
-   border: solid;
-   background-color: #E2E7EA;
-   width: 400px;
-   height: 400px;
+.fotos h1{
+   text-align: center;
+}
+.contenido-fotos{
+   max-width: 1100px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: auto;
+}
+
+
+.contenido-fotos img {
+   padding: 20px;
+   width: 300px;
+   height: 300px;
    object-fit: cover;
-   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
    cursor: default;
    transition: all 400ms ease;
-   margin-right: 30px;
-   margin-bottom: 30px;
+  
 }
 
 .fotos img:hover {
@@ -245,7 +252,7 @@
  .padre{
    display: flex;
    background-color: #f0f0f0;
-   padding: 100px;
+   padding: 45px;
  }
  .form{
    background-color: #b6cdda;
@@ -256,6 +263,7 @@
    padding: 3.5em 1.5em;
    
  }
+
 .form_contenido{
    width: 100%;
    display: grid;
@@ -263,10 +271,12 @@
    grid-auto-columns:100% ;
 }
 
+
+
 .form_titulo{
    text-align: center;
-   font-size: 1.9em;
-   margin-bottom: .4em;
+   font-size: 24px;
+   
 }
 
 .form_input{

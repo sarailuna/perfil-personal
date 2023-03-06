@@ -13,7 +13,11 @@ body{
 }
 
 .menu{
-   text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+    margin-left: auto;
 
 }
 .menu a{
@@ -52,7 +56,7 @@ body{
 .galery-family{
    display: flex;
    flex-wrap: wrap;
-justify-content: space-around;}
+   justify-content: space-around;}
 
 .galery-family img{
    width: 300px;
@@ -100,7 +104,7 @@ justify-content: space-around;}
    flex-wrap: wrap;
    padding-top: 100px;
    justify-content: center;
-   text-align: center;
+   text-align:left;
    padding-top: 50PX;
 
  }
@@ -115,7 +119,7 @@ justify-content: space-around;}
  
  .uno{
      color: #7D8488;
-     text-align: left;
+     text-align: justify;
  }
  
 
@@ -147,7 +151,7 @@ justify-content: space-around;}
  
  .card .contenido2 {
    padding: 20px;
-   text-align: center;
+   text-align: justify;
  }
  .card .contenido2 p {
    line-height: 1.5;
